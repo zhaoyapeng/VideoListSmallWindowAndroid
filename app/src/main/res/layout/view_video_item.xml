@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/video_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.zhaoyp.video.media.IjkVideoView
+            android:id="@+id/main_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/pause_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+    <include
+        android:id="@+id/media_contoller"
+        layout="@layout/media_contoller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ProgressBar
+        android:id="@+id/loading"
+        style="@android:style/Widget.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/layout_seek_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#88000000"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_jiantou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/img_video_jin" />
+
+        <com.zhaoyp.video.media.MySeekBar
+            android:id="@+id/seek_time"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:max="100"
+            android:maxHeight="1.5dp"
+            android:minHeight="1.5dp"
+            android:progressDrawable="@drawable/bg_seek"
+            android:thumb="@drawable/video_seek"
+            android:thumbOffset="10dp" />
+
+        <TextView
+            android:id="@+id/seekTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/img_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:background="#000000"
+            />
+
+        <TextView
+            android:id="@+id/text_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:gravity="center"
+            android:text="网络连接失败，请检查网络连接"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/video_play_btn" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
