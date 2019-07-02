@@ -12,5 +12,4 @@
 /captures
 .externalNativeBuild
 .idea
-gradle
 app/src/androidTest
