@@ -124,4 +124,7 @@ public class DetailsActivity extends AppCompatActivity {
 
 
 
+    public void test_meage(){
+
+    }
 }
