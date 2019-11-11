@@ -118,4 +118,16 @@ public class DetailsActivity extends AppCompatActivity {
         return super.onKeyDown(keyCode, event);
     }
 
+
+
+    private void test1(){
+
+    }
+
+    private void test2(){
+
+    }
+
+
+
 }
