@@ -1,15 +1,55 @@
+
+
+
+# Android generated
+bin/
+gen/
+obj/
+
+# Ant
+# build.xml
+local.properties
+gradle-wrapper.properties
+lint.xml
+
+# Maven
+target/
+pom.xml.*
+release.properties
+
+# Eclipse
+.externalToolBuilders/
+.settings
+
+# IntelliJ
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
+*.ipr
+*.iws
+.idea/
+out/
+
+# Mac 
 .DS_Store
-/build
-/captures
-.externalNativeBuild
+
+# svn
+.svn
+
+# proguard
+proguard
+
+# Gradle
+.gradle
+build
+build/
 .idea
-app/src/androidTest
+gradle/
+gradlew
+gradlew.bat
+
+# Vim
+*.swp
+
+# Git
+#.gitignore
+aura.json
+deeplink.json
