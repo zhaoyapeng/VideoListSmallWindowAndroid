@@ -42,6 +42,7 @@ proguard
 build
 build/
 .idea
+
 gradle/
 gradlew
 gradlew.bat
@@ -53,3 +54,4 @@ gradlew.bat
 #.gitignore
 aura.json
 deeplink.json
+
